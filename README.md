@@ -1,4 +1,4 @@
-# School Assignment for CS2111
+# School Assignment for CS2211
 
 ## Part 1 | imperial and metric converter
 
