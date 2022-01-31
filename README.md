@@ -1,6 +1,6 @@
 # School Assignment for CS2111
 
-## Part 1 | imperical and metric converter
+## Part 1 | imperial and metric converter
 
 The goal of the exercise is to implement a simple converter, called ”converter”, which works
 as follows.
