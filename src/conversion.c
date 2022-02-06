@@ -11,9 +11,9 @@ void conversion(char subSelection, const char optionOne, const char * optionOneN
   printf("Enter a value: ");
   scanf("\n%f", &value);
   if (subSelection == optionOne)
-    printf("%.2f %s(s) is %.2f %s(s)\n", value, optionOneName, value * multiplier, optionTwoName);
+    printf("%.2f %s(s) is %.2f %s(s)\n\n", value, optionOneName, value * multiplier, optionTwoName);
   else 
-    printf("%.2f %s(s) is %.2f %s(s)\n", value, optionTwoName, value / multiplier, optionOneName);
+    printf("%.2f %s(s) is %.2f %s(s)\n\n", value, optionTwoName, value / multiplier, optionOneName);
 }
 
 char subMenuSelector(const char optionOne, const char * optionOneName, const char optionTwo, const char * optionTwoName) {

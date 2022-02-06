@@ -100,6 +100,6 @@ int main(){
     } else if (firstDigit > 0) {
       printf("%s", getValue(firstDigit, 1));
     }
-    printf("\n");
+    printf("\n\n");
   }
 }
