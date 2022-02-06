@@ -18,7 +18,10 @@ void conversion(char subSelection, const char optionOne, const char * optionOneN
 
 char subMenuSelector(const char optionOne, const char * optionOneName, const char optionTwo, const char * optionTwoName) {
   char selection;
-  printf("%c for conversion from %s to %s | %c for conversion from %s to %s\nSelect one of the above options: ", optionOne, optionOneName, optionTwoName, optionTwo, optionTwoName, optionOneName);
+  printf(
+    "%c for conversion from %s to %s | %c for conversion from %s to %s\nSelect one of the above options: ",
+    optionOne, optionOneName, optionTwoName, optionTwo, optionTwoName, optionOneName
+  );
   scanf("\n%c", &selection);
   while (selection != optionOne && selection != optionTwo) {
     printf("Invalid Input, try again: ");
@@ -29,8 +32,14 @@ char subMenuSelector(const char optionOne, const char * optionOneName, const cha
 
 int main() {
   int selection;
-  for (; ; ) {
-    printf("1 for conversion between Kilometres and Miles\n2 for conversion between Liters and Gallons\n3 for conversion between Hectares and Acres\n4 for conversion between Kilograms and Pounds\n5 to Quit\nSelect one of the above options: ");
+  for (;;) {
+    printf(
+"1 for conversion between Kilometres and Miles\n\
+2 for conversion between Liters and Gallons\n\
+3 for conversion between Hectares and Acres\n\
+4 for conversion between Kilograms and Pounds\n\
+5 to Quit\n\
+Enter one of the above options: ");
     scanf("\n%d", &selection);
     while (selection > 5 || selection < 1) {
       printf("Invalid Input, try again: ");

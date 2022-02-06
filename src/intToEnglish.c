@@ -73,7 +73,7 @@ char * getValue(int number, int weight) {
 
 int main(){
   int number;
-  for (; ; ) {
+  for (;;) {
     printf("Please enter a value (1-999, 0 to quit): ");
     scanf("%d", &number);
     if (number == 0) {
